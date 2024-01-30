@@ -16,29 +16,38 @@
             font-weight: bold;
             color: #333;
         }
-        #funfact-container {
+        #content-container {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 20px;
         }
-        #funfact-text {
-            max-width: 400px;
-            margin-left: 20px;
+        #image-container {
+            flex: 1;
         }
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 10px;
+        }
+        #text-container {
+            flex: 1;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
     <h1>Das wird die Seite von K.Furry</h1>
     
-    <img src="pb1.png" alt="K.Furry's Profilbild">
-
-    <div id="funfact-container">
-        <div id="funfact-text">
+    <div id="content-container">
+        <div id="image-container">
+            <img src="pb1.png" alt="K.Furry's Profilbild">
+        </div>
+        <div id="text-container">
             <p>Funfact:</p>
             <p>Meine echte Fursona hat keine Flügel!</p>
         </div>
