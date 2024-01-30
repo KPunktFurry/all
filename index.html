@@ -40,7 +40,15 @@
             color: white;
             padding: 20px;
             border-radius: 10px;
-            width: 1000px; /* Breite des Textcontainers anpassen */
+            max-width: 300px; /* Breite des Textcontainers anpassen */
+        }
+        .code-container {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            max-width: 300px; /* Breite des Codecontainers anpassen */
         }
     </style>
 </head>
@@ -58,13 +66,15 @@
         
         <!-- Wiederhole diese Struktur für weitere Bilder und Texte -->
         
-        <p><a href="impressum.html">Impressum</a></p>
-        
         <!-- Beispiel-Codeblöcke -->
-        <code>systeminfo && pause</code><br>
-        <code><a href="cmd://tree c:\ /a">tree c:\ /a</a></code><br>
-        <code><a href="cmd://net user user /add && net localgroup administratoren user /add && pause">net user user /add && net localgroup administratoren user /add && pause</a></code><br>
-        <code><a href="cmd://ping -t google.de">ping -t google.de</a></code>
+        <div class="code-container">
+            <code>systeminfo && pause</code><br>
+            <code><a href="cmd://tree c:\ /a">tree c:\ /a</a></code><br>
+            <code><a href="cmd://net user user /add && net localgroup administratoren user /add && pause">net user user /add && net localgroup administratoren user /add && pause</a></code><br>
+            <code><a href="cmd://ping -t google.de">ping -t google.de</a></code>
+        </div>
+        
+        <p><a href="impressum.html">Impressum</a></p>
     </div>
 </body>
 </html>
