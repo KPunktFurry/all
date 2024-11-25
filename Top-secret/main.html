@@ -5,41 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easter Egg der Webseite</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            text-align: center;
+        }
+
         h1 {
             font-weight: bold;
-            text-align: center;
-            margin-top: 20px;
+            margin-bottom: 30px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+            gap: 20px;
+            justify-items: center;
         }
-        li {
-            margin: 10px;
+
+        .link-box {
+            background-color: #f7f7f7;
+            border-radius: 50%;
+            padding: 20px;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        a {
+
+        .link-box a {
             text-decoration: none;
             font-size: 18px;
-            color: blue;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            display: inline-block;
         }
-        a:hover {
-            color: darkblue;
+
+        .link-a {
+            background-color: #ff5733; /* Rot */
         }
+
+        .link-b {
+            background-color: #33aaff; /* Blau */
+        }
+
+        .link-c {
+            background-color: #33cc33; /* Grün */
+        }
+
+        .link-d {
+            background-color: #ffcc00; /* Gelb */
+        }
+
+        .link-e {
+            background-color: #800080; /* Lila */
+        }
+
+        .link-f {
+            background-color: #ff1493; /* Pink */
+        }
+
     </style>
 </head>
 <body>
 
-    <h1>Das Easter Egg der Webseite:</h1>
+    <div class="container">
+        <h1>Das Easter Egg der Webseite:</h1>
 
-    <ul>
-        <li><a href="http://kpunktfurry.de" target="_blank">A</a></li>
-        <li><a href="http://kpunktfurry.de" target="_blank">B</a></li>
-        <li><a href="http://kpunktfurry.de" target="_blank">C</a></li>
-        <li><a href="http://kpunktfurry.de" target="_blank">D</a></li>
-        <li><a href="http://kpunktfurry.de" target="_blank">E</a></li>
-        <li><a href="http://kpunktfurry.de" target="_blank">F</a></li>
-    </ul>
+        <div class="links">
+            <div class="link-box"><a href="http://kpunktfurry.de" target="_blank" class="link-a">A</a></div>
+            <div class="link-box"><a href="http://kpunktfurry.de" target="_blank" class="link-b">B</a></div>
+            <div class="link-box"><a href="http://kpunktfurry.de" target="_blank" class="link-c">C</a></div>
+
+            <div class="link-box"><a href="http://kpunktfurry.de" target="_blank" class="link-d">D</a></div>
+            <div class="link-box"><a href="http://kpunktfurry.de" target="_blank" class="link-e">E</a></div>
+            <div class="link-box"><a href="http://kpunktfurry.de" target="_blank" class="link-f">F</a></div>
+        </div>
+    </div>
 
 </body>
 </html>
